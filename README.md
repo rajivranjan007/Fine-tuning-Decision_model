@@ -23,6 +23,8 @@ Results from one run (5,000 training rows, 2 epochs, 500 test rows, RTX 5050 8 G
 | ECE (lower is better) | 0.220 | 0.002 |
 | Loss (lower is better) | 1.280 | 0.002 |
 
+![Before vs after fine-tuning: accuracy 50.6% to 100%, ECE 0.220 to 0.002, loss 1.280 to 0.002](image_1.png)
+
 Caveat: the test rows are a random split, so the same tools appear in train and test. The 100% shows the model learned
 this data, not yet that it handles **unseen** tools. Testing on tools held out from training is the next step.
 
